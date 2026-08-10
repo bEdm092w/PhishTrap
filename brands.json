@@ -1,0 +1,23 @@
+{
+  "brands": [
+    { "name": "paypal", "legitDomains": ["paypal.com"] },
+    { "name": "amazon", "legitDomains": ["amazon.com", "amazon.co.uk", "amazon.ca"] },
+    { "name": "apple", "legitDomains": ["apple.com", "icloud.com"] },
+    { "name": "microsoft", "legitDomains": ["microsoft.com", "live.com", "outlook.com", "office.com"] },
+    { "name": "google", "legitDomains": ["google.com", "gmail.com", "accounts.google.com"] },
+    { "name": "netflix", "legitDomains": ["netflix.com"] },
+    { "name": "facebook", "legitDomains": ["facebook.com", "fb.com"] },
+    { "name": "chase", "legitDomains": ["chase.com"] },
+    { "name": "bankofamerica", "legitDomains": ["bankofamerica.com"] },
+    { "name": "wellsfargo", "legitDomains": ["wellsfargo.com"] },
+    { "name": "usps", "legitDomains": ["usps.com"] },
+    { "name": "fedex", "legitDomains": ["fedex.com"] },
+    { "name": "ups", "legitDomains": ["ups.com"] },
+    { "name": "irs", "legitDomains": ["irs.gov"] },
+    { "name": "socialsecurity", "legitDomains": ["ssa.gov"] },
+    { "name": "medicare", "legitDomains": ["medicare.gov"] },
+    { "name": "coinbase", "legitDomains": ["coinbase.com"] },
+    { "name": "venmo", "legitDomains": ["venmo.com"] },
+    { "name": "zelle", "legitDomains": ["zellepay.com"] }
+  ]
+}

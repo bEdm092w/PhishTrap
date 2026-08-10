@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STOP - Potential Scam Detected</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: #b91c1c; font-family: system-ui, -apple-system, sans-serif; padding: 24px;
+    }
+    .card {
+      background: white; border-radius: 20px; max-width: 620px; width: 100%;
+      padding: 40px 32px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .icon { font-size: 64px; margin-bottom: 8px; }
+    h1 { font-size: 34px; color: #b91c1c; margin: 0 0 12px; }
+    p.lead { font-size: 22px; color: #111; line-height: 1.4; font-weight: 600; margin: 16px 0; }
+    p.detail { font-size: 17px; color: #444; line-height: 1.5; margin-bottom: 20px; }
+    .buttons { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+    button, a.btn {
+      font-size: 18px; padding: 16px 20px; border-radius: 12px; border: none;
+      cursor: pointer; font-weight: 700; text-decoration: none; display: block;
+    }
+    .btn-call { background: #16a34a; color: white; }
+    .btn-leave { background: #b91c1c; color: white; }
+    .btn-proceed { background: #f3f4f6; color: #6b7280; font-weight: 500; font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🛑</div>
+    <h1>STOP</h1>
+    <p class="lead" id="lead-text">This page may be pretending to be a company you trust.</p>
+    <p class="detail" id="detail-text">We blocked this website to protect your credentials and financial security.</p>
+    <p class="detail"><strong>Do NOT enter passwords, credit card numbers, or personal details on this site.</strong></p>
+    <div class="buttons">
+      <button class="btn-call" id="call-contact">📞 Call My Trusted Contact</button>
+      <a class="btn-leave" id="leave-btn" href="https://www.google.com">Take Me Somewhere Safe</a>
+      <button class="btn-proceed" id="proceed-anyway">I understand the risk — show me the page anyway</button>
+    </div>
+  </div>
+  <script src="blocked.js"></script>
+</body>
+</html>

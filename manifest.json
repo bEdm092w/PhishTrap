@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Guardian PhishGuard: Scam Blocker",
+  "version": "1.0.0",
+  "description": "Protects users against phishing, lookalike domains, and tech support scams using multi-layered AI & heuristics.",
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Guardian PhishGuard Settings"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html", "blocked.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
