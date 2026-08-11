@@ -1,28 +1,579 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>PhishTrap Guardian</title>
+
   <style>
-    body { width: 320px; font-family: system-ui, sans-serif; padding: 18px; margin: 0; }
-    h2 { font-size: 18px; margin: 0 0 14px; color: #111827; }
-    label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; color: #374151; }
-    input { width: 100%; padding: 8px 10px; font-size: 14px; border: 1px solid #d1d5db; border-radius: 6px; box-sizing: border-box; }
-    button { margin-top: 16px; width: 100%; padding: 12px; background: #16a34a; color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; }
-    .status { font-size: 12px; color: #16a34a; margin-top: 8px; height: 14px; font-weight: 600; text-align: center; }
-    .hint { font-size: 11px; color: #6b7280; margin-top: 4px; }
+    :root {
+      color-scheme: dark;
+
+      --bg: #07090d;
+      --panel: #0d1016;
+      --panel-soft: #11151d;
+
+      --text: #f8fafc;
+      --text-soft: #cbd5e1;
+      --muted: #7c8ba1;
+      --faint: #4b586b;
+
+      --green: #22c55e;
+      --green-bright: #34d399;
+      --green-soft: rgba(34, 197, 94, 0.09);
+      --green-border: rgba(34, 197, 94, 0.20);
+
+      --border: rgba(255, 255, 255, 0.075);
+      --border-light: rgba(255, 255, 255, 0.11);
+
+      --radius-xl: 22px;
+      --radius-lg: 15px;
+      --radius-md: 11px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      min-width: 380px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(34, 197, 94, 0.085),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 100% 100%,
+          rgba(59, 130, 246, 0.035),
+          transparent 30%
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 390px;
+      padding: 18px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.008)
+        ),
+        rgba(13, 16, 22, 0.96);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow:
+        0 35px 90px rgba(0, 0, 0, 0.50),
+        0 12px 35px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 180px;
+      top: -140px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(34, 197, 94, 0.10);
+      filter: blur(55px);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 2px 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 13px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(34, 197, 94, 0.15),
+          rgba(34, 197, 94, 0.035)
+        );
+
+      border: 1px solid var(--green-border);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04),
+        0 8px 24px rgba(34, 197, 94, 0.06);
+
+      font-size: 18px;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .brand-subtitle {
+      color: var(--faint);
+      font-size: 9px;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .active {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      border: 1px solid var(--green-border);
+      color: #86efac;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .active-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow:
+        0 0 0 3px rgba(34, 197, 94, 0.07),
+        0 0 12px rgba(34, 197, 94, 0.55);
+    }
+
+    .hero {
+      padding: 3px 2px 17px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 8px;
+      color: var(--green-bright);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-line {
+      width: 17px;
+      height: 1px;
+      background: rgba(52, 211, 153, 0.5);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.15;
+      letter-spacing: -0.045em;
+      font-weight: 850;
+    }
+
+    .hero p {
+      max-width: 320px;
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.55;
+    }
+
+    .panel {
+      padding: 16px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.008)
+        ),
+        var(--panel);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #e2e8f0;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .panel-icon {
+      width: 7px;
+      height: 16px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow:
+        0 0 12px rgba(34, 197, 94, 0.45);
+    }
+
+    .secure-label {
+      color: var(--faint);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .fields {
+      padding-top: 15px;
+    }
+
+    .field {
+      margin-bottom: 17px;
+    }
+
+    .field:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      color: var(--text-soft);
+      font-size: 10.5px;
+      font-weight: 750;
+    }
+
+    .optional {
+      color: var(--faint);
+      font-size: 8px;
+      font-weight: 650;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    input {
+      width: 100%;
+      height: 42px;
+      padding: 0 12px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      outline: none;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 11px;
+      transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    input::placeholder {
+      color: #455166;
+    }
+
+    input:hover {
+      border-color: var(--border-light);
+    }
+
+    input:focus {
+      background: #141922;
+      border-color: rgba(34, 197, 94, 0.42);
+      box-shadow:
+        0 0 0 3px rgba(34, 197, 94, 0.07);
+    }
+
+    .hint {
+      margin-top: 6px;
+      color: var(--faint);
+      font-size: 8.5px;
+      line-height: 1.5;
+    }
+
+    #save {
+      width: 100%;
+      height: 43px;
+      margin-top: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(
+          180deg,
+          #2bd477,
+          #1dbb64
+        );
+
+      color: #03140a;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: -0.01em;
+      cursor: pointer;
+      box-shadow:
+        0 10px 24px rgba(34, 197, 94, 0.13),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      transition:
+        transform 0.18s ease,
+        filter 0.18s ease,
+        box-shadow 0.18s ease;
+    }
+
+    #save:hover {
+      filter: brightness(1.06);
+      transform: translateY(-1px);
+      box-shadow:
+        0 13px 28px rgba(34, 197, 94, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    }
+
+    #save:active {
+      transform: translateY(0);
+    }
+
+    #save:focus-visible {
+      outline: 2px solid var(--green-bright);
+      outline-offset: 3px;
+    }
+
+    .status {
+      min-height: 14px;
+      margin-top: 8px;
+      color: #4ade80;
+      font-size: 9px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 6px;
+      margin-top: 14px;
+      color: var(--faint);
+      font-size: 8.5px;
+    }
+
+    .footer-mark {
+      color: #64748b;
+      font-size: 9px;
+    }
+
+    @media (max-width: 430px) {
+      body {
+        min-width: 0;
+
+        padding: 14px;
+      }
+
+      .app {
+        max-width: 390px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h2>🛡️ Guardian PhishGuard</h2>
-  <label for="apiKey">Google Safe Browsing API Key</label>
-  <input id="apiKey" type="text" placeholder="AIzaSy..." />
-  <div class="hint">Free key from console.cloud.google.com</div>
 
-  <label for="trustedContact">Trusted Contact Phone Number</label>
-  <input id="trustedContact" type="tel" placeholder="+1 555 019 2834" />
+  <div class="app">
 
-  <button id="save">Save Settings</button>
-  <div class="status" id="status"></div>
+    <div class="content">
+      <header class="header">
+
+        <div class="brand">
+
+          <div class="brand-icon">
+            🛡️
+          </div>
+
+          <div class="brand-text">
+            <div class="brand-name">
+              PhishTrap Guardian
+            </div>
+
+            <div class="brand-subtitle">
+              Security Control
+            </div>
+          </div>
+
+        </div>
+
+        <div class="active">
+          <span class="active-dot"></span>
+          Active
+        </div>
+
+      </header>
+
+      <section class="hero">
+
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Guardian Console
+        </div>
+
+        <h1>
+          Protection Settings
+        </h1>
+
+        <p>
+          Configure the security services Guardian uses
+          to detect and respond to suspicious websites.
+        </p>
+
+      </section>
+
+      <section class="panel">
+
+        <div class="panel-header">
+
+          <div class="panel-title">
+            <span class="panel-icon"></span>
+            Protection Configuration
+          </div>
+
+          <div class="secure-label">
+            Secure
+          </div>
+
+        </div>
+
+
+        <div class="fields">
+          <div class="field">
+
+            <label for="apiKey">
+              Google Safe Browsing API Key
+              <span class="optional">Required</span>
+            </label>
+
+            <input
+              id="apiKey"
+              type="text"
+              autocomplete="off"
+              placeholder="AIzaSy..."
+            >
+
+            <div class="hint">
+              Used to check suspicious domains against
+              Google's Safe Browsing database.
+            </div>
+
+          </div>
+
+          <div class="field">
+
+            <label for="trustedContact">
+              Trusted Contact Phone Number
+              <span class="optional">Recovery</span>
+            </label>
+
+            <input
+              id="trustedContact"
+              type="tel"
+              autocomplete="tel"
+              placeholder="+1 555 019 2834"
+            >
+
+            <div class="hint">
+              Used when Guardian needs to escalate
+              a serious security warning.
+            </div>
+
+          </div>
+
+        </div>
+
+        <button id="save">
+          Save Settings
+        </button>
+
+        <div class="status" id="status"></div>
+
+      </section>
+
+      <footer class="footer">
+        <span class="footer-mark">◆</span>
+        Guardian protection is active
+      </footer>
+
+    </div>
+
+  </div>
+
+
   <script src="popup.js"></script>
+
 </body>
 </html>
