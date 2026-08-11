@@ -20,6 +20,6 @@ document.getElementById("call-contact").addEventListener("click", async () => {
   if (trustedContact) {
     location.href = `tel:${trustedContact}`;
   } else {
-    alert("No trusted contact phone number has been configured. Open the Guardian PhishGuard extension icon in your toolbar to add one.");
+    alert("No trusted contact phone number has been configured. Open the Guardian SafeStep extension icon in your toolbar to add one.");
   }
 });
