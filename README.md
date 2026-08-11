@@ -1,6 +1,6 @@
-#  Guardian PhishGuard
+#  SafeStep
 
-Guardian PhishGuard is a lightweight, multi-layered Chrome extension engineered to protect vulnerable and non-technical populations (such as the elderly) from digital fraud, phishing, and tech-support scams. 
+SafeStep is a lightweight, multi-layered Chrome extension engineered to protect vulnerable and non-technical populations (such as the elderly) from digital fraud, phishing, and tech-support scams. 
 
 By combining offline heuristic analysis with live threat intelligence, PhishGuard actively intercepts dangerous navigation and high-pressure credential harvesting attempts before the user can be compromised.
 
@@ -25,12 +25,12 @@ By combining offline heuristic analysis with live threat intelligence, PhishGuar
    decision-making under risk.
 
    It transforms detection into effective human protection while providing
-   PhishTrap Guardian with a polished, accessible, and trustworthy product
+   SafeStep Guardian with a polished, accessible, and trustworthy product
    experience.
 ##  Installation & Setup (Developer Mode)
 
-To install and run Guardian PhishGuard locally:
+To install and run SafeStep locally:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/yourusername/guardian-phishguard.git](https://github.com/yourusername/guardian-phishguard.git)
+   git clone [https://github.com/yourusername/SafeStep.git](https://github.com/yourusername/SafeStep.git)
