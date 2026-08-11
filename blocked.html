@@ -2,45 +2,539 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a0f">
   <title>STOP - Potential Scam Detected</title>
+
   <style>
-    :root { color-scheme: light; }
-    * { box-sizing: border-box; }
+    :root {
+      color-scheme: dark;
+
+      --bg: #07090d;
+      --surface: rgba(17, 20, 27, 0.82);
+      --surface-solid: #11141b;
+      --border: rgba(255, 255, 255, 0.08);
+
+      --text: #f8fafc;
+      --muted: #9ca3af;
+      --subtle: #6b7280;
+
+      --danger: #ff3b30;
+      --danger-soft: rgba(255, 59, 48, 0.12);
+      --danger-border: rgba(255, 59, 48, 0.25);
+
+      --safe: #22c55e;
+      --safe-dark: #16a34a;
+
+      --radius-xl: 28px;
+      --radius-lg: 18px;
+
+      --shadow:
+        0 30px 80px rgba(0, 0, 0, 0.55),
+        0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
     body {
-      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-      background: #b91c1c; font-family: system-ui, -apple-system, sans-serif; padding: 24px;
+      min-height: 100%;
     }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      background:
+        radial-gradient(
+          circle at 50% 35%,
+          rgba(255, 59, 48, 0.09),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 85% 85%,
+          rgba(59, 130, 246, 0.06),
+          transparent 30%
+        ),
+        var(--bg);
+
+      color: var(--text);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.22;
+      background-image:
+        linear-gradient(
+          rgba(255, 255, 255, 0.025) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.025) 1px,
+          transparent 1px
+        );
+
+      background-size: 42px 42px;
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 85%
+      );
+    }
+
     .card {
-      background: white; border-radius: 20px; max-width: 620px; width: 100%;
-      padding: 40px 32px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      position: relative;
+      width: 100%;
+      max-width: 680px;
+      padding: 34px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.055),
+          rgba(255, 255, 255, 0.015)
+        ),
+        var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      overflow: hidden;
+      animation: cardIn 0.55s cubic-bezier(.2,.8,.2,1);
     }
-    .icon { font-size: 64px; margin-bottom: 8px; }
-    h1 { font-size: 34px; color: #b91c1c; margin: 0 0 12px; }
-    p.lead { font-size: 22px; color: #111; line-height: 1.4; font-weight: 600; margin: 16px 0; }
-    p.detail { font-size: 17px; color: #444; line-height: 1.5; margin-bottom: 20px; }
-    .buttons { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
-    button, a.btn {
-      font-size: 18px; padding: 16px 20px; border-radius: 12px; border: none;
-      cursor: pointer; font-weight: 700; text-decoration: none; display: block;
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      top: -220px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 59, 48, 0.13);
+      filter: blur(70px);
+      pointer-events: none;
     }
-    .btn-call { background: #16a34a; color: white; }
-    .btn-leave { background: #b91c1c; color: white; }
-    .btn-proceed { background: #f3f4f6; color: #6b7280; font-weight: 500; font-size: 15px; }
+
+    .status {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 34px;
+      color: var(--subtle);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .status-left {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--danger);
+      box-shadow:
+        0 0 0 4px rgba(255, 59, 48, 0.08),
+        0 0 18px rgba(255, 59, 48, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    .status-label {
+      color: #cbd5e1;
+    }
+
+    .guardian-label {
+      color: #64748b;
+    }
+
+    .icon-wrapper {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 26px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 59, 48, 0.17),
+          rgba(255, 59, 48, 0.045)
+        );
+
+      border: 1px solid var(--danger-border);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 18px 50px rgba(255, 59, 48, 0.12);
+    }
+
+    .icon {
+      font-size: 42px;
+      line-height: 1;
+      filter:
+        drop-shadow(0 8px 18px rgba(255, 59, 48, 0.35));
+    }
+
+    h1 {
+      position: relative;
+      margin: 0;
+      text-align: center;
+      font-size: clamp(42px, 8vw, 58px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -0.055em;
+      color: #ffffff;
+    }
+
+    .headline-accent {
+      color: var(--danger);
+    }
+
+    .lead {
+      max-width: 540px;
+      margin: 22px auto 0;
+      text-align: center;
+      color: #e5e7eb;
+      font-size: clamp(19px, 3vw, 23px);
+      line-height: 1.45;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .detail {
+      max-width: 540px;
+      margin: 16px auto 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .detail strong {
+      color: #e5e7eb;
+      font-weight: 700;
+    }
+
+    .warning {
+      position: relative;
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+      padding: 16px 18px;
+      text-align: left;
+      border-radius: var(--radius-lg);
+      background: var(--danger-soft);
+      border: 1px solid var(--danger-border);
+    }
+
+    .warning-icon {
+      flex: 0 0 auto;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      background: rgba(255, 59, 48, 0.14);
+      color: #ff6b63;
+      font-size: 14px;
+    }
+
+    .warning-text {
+      margin: 0;
+      color: #d1d5db;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .warning-text strong {
+      color: #ffffff;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-top: 30px;
+    }
+
+    button,
+    a.btn {
+      position: relative;
+      width: 100%;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      border-radius: 15px;
+      border: 1px solid transparent;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: -0.01em;
+      cursor: pointer;
+      text-decoration: none;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:hover,
+    a.btn:hover {
+      transform: translateY(-2px);
+    }
+
+    button:active,
+    a.btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-call {
+      background: rgba(34, 197, 94, 0.08);
+      border-color: rgba(34, 197, 94, 0.22);
+      color: #86efac;
+    }
+
+    .btn-call:hover {
+      background: rgba(34, 197, 94, 0.13);
+      border-color: rgba(34, 197, 94, 0.35);
+      box-shadow:
+        0 12px 30px rgba(34, 197, 94, 0.08);
+    }
+
+    .btn-leave {
+      background: #ffffff;
+      color: #090b10;
+      box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-leave:hover {
+      background: #f3f4f6;
+      box-shadow:
+        0 16px 38px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn-proceed {
+      min-height: 46px;
+      margin-top: 2px;
+      background: transparent;
+      border-color: transparent;
+      color: #64748b;
+      font-size: 12px;
+      font-weight: 550;
+    }
+
+    .btn-proceed:hover {
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.025);
+      border-color: rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin-top: 24px;
+      color: #4b5563;
+      font-size: 11px;
+      letter-spacing: 0.02em;
+    }
+
+    .footer-shield {
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    button:focus-visible,
+    a.btn:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.8);
+      outline-offset: 3px;
+    }
+
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.55;
+        transform: scale(0.8);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 560px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        padding: 26px 20px 22px;
+        border-radius: 23px;
+      }
+
+      .status {
+        margin-bottom: 28px;
+      }
+
+      .icon-wrapper {
+        width: 76px;
+        height: 76px;
+        margin-bottom: 20px;
+        border-radius: 22px;
+      }
+
+      .icon {
+        font-size: 35px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .detail {
+        font-size: 14px;
+      }
+
+      .warning {
+        padding: 14px;
+      }
+
+      .buttons {
+        margin-top: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <div class="icon">🛑</div>
-    <h1>STOP</h1>
-    <p class="lead" id="lead-text">This page may be pretending to be a company you trust.</p>
-    <p class="detail" id="detail-text">We blocked this website to protect your credentials and financial security.</p>
-    <p class="detail"><strong>Do NOT enter passwords, credit card numbers, or personal details on this site.</strong></p>
-    <div class="buttons">
-      <button class="btn-call" id="call-contact">📞 Call My Trusted Contact</button>
-      <a class="btn-leave" id="leave-btn" href="https://www.google.com">Take Me Somewhere Safe</a>
-      <button class="btn-proceed" id="proceed-anyway">I understand the risk — show me the page anyway</button>
+
+  <main class="card">
+
+    <div class="status">
+      <div class="status-left">
+        <span class="status-dot"></span>
+        <span class="status-label">THREAT DETECTED</span>
+      </div>
+
+      <span class="guardian-label">PHISHTRAP GUARDIAN</span>
     </div>
-  </div>
+
+    <div class="icon-wrapper">
+      <div class="icon">🛑</div>
+    </div>
+
+    <h1>
+      <span class="headline-accent">STOP.</span>
+    </h1>
+
+    <p class="lead" id="lead-text">
+      This page may be pretending to be a company you trust.
+    </p>
+
+    <p class="detail" id="detail-text">
+      We blocked this website to protect your credentials and financial security.
+    </p>
+
+    <div class="warning">
+      <div class="warning-icon">!</div>
+
+      <p class="warning-text">
+        <strong>Do not enter sensitive information.</strong>
+        Never provide passwords, credit card numbers, verification codes,
+        or personal details on this website.
+      </p>
+    </div>
+
+    <div class="buttons">
+
+      <button class="btn-call" id="call-contact">
+        📞&nbsp;&nbsp;Call My Trusted Contact
+      </button>
+
+      <a
+        class="btn btn-leave"
+        id="leave-btn"
+        href="https://www.google.com"
+      >
+        Leave This Site&nbsp;&nbsp;→
+      </a>
+
+      <button class="btn-proceed" id="proceed-anyway">
+        I understand the risk — show me the page anyway
+      </button>
+
+    </div>
+
+    <div class="footer">
+      <span class="footer-shield">◈</span>
+      Protected by PhishTrap Guardian
+    </div>
+
+  </main>
+
   <script src="blocked.js"></script>
+
 </body>
 </html>
