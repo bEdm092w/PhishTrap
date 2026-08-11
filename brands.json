@@ -1,23 +1,875 @@
 {
+  "_comment": "Expanded list. Egypt/MENA entries were verified via web search on 2026-08-11 (bank/telecom names change ownership/domains over time — recheck before a real deployment). Each brand includes the www. variant to avoid false positives.",
   "brands": [
-    { "name": "paypal", "legitDomains": ["paypal.com"] },
-    { "name": "amazon", "legitDomains": ["amazon.com", "amazon.co.uk", "amazon.ca"] },
-    { "name": "apple", "legitDomains": ["apple.com", "icloud.com"] },
-    { "name": "microsoft", "legitDomains": ["microsoft.com", "live.com", "outlook.com", "office.com"] },
-    { "name": "google", "legitDomains": ["google.com", "gmail.com", "accounts.google.com"] },
-    { "name": "netflix", "legitDomains": ["netflix.com"] },
-    { "name": "facebook", "legitDomains": ["facebook.com", "fb.com"] },
-    { "name": "chase", "legitDomains": ["chase.com"] },
-    { "name": "bankofamerica", "legitDomains": ["bankofamerica.com"] },
-    { "name": "wellsfargo", "legitDomains": ["wellsfargo.com"] },
-    { "name": "usps", "legitDomains": ["usps.com"] },
-    { "name": "fedex", "legitDomains": ["fedex.com"] },
-    { "name": "ups", "legitDomains": ["ups.com"] },
-    { "name": "irs", "legitDomains": ["irs.gov"] },
-    { "name": "socialsecurity", "legitDomains": ["ssa.gov"] },
-    { "name": "medicare", "legitDomains": ["medicare.gov"] },
-    { "name": "coinbase", "legitDomains": ["coinbase.com"] },
-    { "name": "venmo", "legitDomains": ["venmo.com"] },
-    { "name": "zelle", "legitDomains": ["zellepay.com"] }
+    {
+      "legitDomains": [
+        "paypal.com",
+        "www.paypal.com"
+      ],
+      "name": "paypal"
+    },
+    {
+      "legitDomains": [
+        "amazon.com",
+        "www.amazon.com",
+        "amazon.co.uk",
+        "amazon.ca",
+        "amazon.eg",
+        "www.amazon.eg",
+        "amazon.ae",
+        "amazon.sa"
+      ],
+      "name": "amazon"
+    },
+    {
+      "legitDomains": [
+        "apple.com",
+        "www.apple.com",
+        "icloud.com",
+        "www.icloud.com"
+      ],
+      "name": "apple"
+    },
+    {
+      "legitDomains": [
+        "microsoft.com",
+        "www.microsoft.com",
+        "live.com",
+        "outlook.com",
+        "office.com",
+        "microsoft365.com"
+      ],
+      "name": "microsoft"
+    },
+    {
+      "legitDomains": [
+        "google.com",
+        "www.google.com",
+        "accounts.google.com",
+        "mail.google.com",
+        "drive.google.com",
+        "gmail.com"
+      ],
+      "name": "google"
+    },
+    {
+      "legitDomains": [
+        "netflix.com",
+        "www.netflix.com"
+      ],
+      "name": "netflix"
+    },
+    {
+      "legitDomains": [
+        "facebook.com",
+        "www.facebook.com",
+        "m.facebook.com",
+        "fb.com"
+      ],
+      "name": "facebook"
+    },
+    {
+      "legitDomains": [
+        "chase.com",
+        "www.chase.com"
+      ],
+      "name": "chase"
+    },
+    {
+      "legitDomains": [
+        "bankofamerica.com",
+        "www.bankofamerica.com"
+      ],
+      "name": "bankofamerica"
+    },
+    {
+      "legitDomains": [
+        "wellsfargo.com",
+        "www.wellsfargo.com"
+      ],
+      "name": "wellsfargo"
+    },
+    {
+      "legitDomains": [
+        "usps.com",
+        "www.usps.com"
+      ],
+      "name": "usps"
+    },
+    {
+      "legitDomains": [
+        "fedex.com",
+        "www.fedex.com"
+      ],
+      "name": "fedex"
+    },
+    {
+      "legitDomains": [
+        "ups.com",
+        "www.ups.com"
+      ],
+      "name": "ups"
+    },
+    {
+      "legitDomains": [
+        "irs.gov",
+        "www.irs.gov"
+      ],
+      "name": "irs"
+    },
+    {
+      "legitDomains": [
+        "ssa.gov",
+        "www.ssa.gov"
+      ],
+      "name": "socialsecurity"
+    },
+    {
+      "legitDomains": [
+        "medicare.gov",
+        "www.medicare.gov"
+      ],
+      "name": "medicare"
+    },
+    {
+      "legitDomains": [
+        "coinbase.com",
+        "www.coinbase.com"
+      ],
+      "name": "coinbase"
+    },
+    {
+      "legitDomains": [
+        "venmo.com",
+        "www.venmo.com"
+      ],
+      "name": "venmo"
+    },
+    {
+      "legitDomains": [
+        "zellepay.com",
+        "www.zellepay.com"
+      ],
+      "name": "zelle"
+    },
+    {
+      "legitDomains": [
+        "youtube.com",
+        "www.youtube.com",
+        "m.youtube.com"
+      ],
+      "name": "youtube"
+    },
+    {
+      "legitDomains": [
+        "instagram.com",
+        "www.instagram.com"
+      ],
+      "name": "instagram"
+    },
+    {
+      "legitDomains": [
+        "whatsapp.com",
+        "www.whatsapp.com",
+        "web.whatsapp.com"
+      ],
+      "name": "whatsapp"
+    },
+    {
+      "legitDomains": [
+        "twitter.com",
+        "www.twitter.com",
+        "x.com",
+        "www.x.com"
+      ],
+      "name": "twitter"
+    },
+    {
+      "legitDomains": [
+        "tiktok.com",
+        "www.tiktok.com"
+      ],
+      "name": "tiktok"
+    },
+    {
+      "legitDomains": [
+        "linkedin.com",
+        "www.linkedin.com"
+      ],
+      "name": "linkedin"
+    },
+    {
+      "legitDomains": [
+        "snapchat.com",
+        "www.snapchat.com"
+      ],
+      "name": "snapchat"
+    },
+    {
+      "legitDomains": [
+        "pinterest.com",
+        "www.pinterest.com"
+      ],
+      "name": "pinterest"
+    },
+    {
+      "legitDomains": [
+        "reddit.com",
+        "www.reddit.com"
+      ],
+      "name": "reddit"
+    },
+    {
+      "legitDomains": [
+        "discord.com",
+        "www.discord.com",
+        "discordapp.com"
+      ],
+      "name": "discord"
+    },
+    {
+      "legitDomains": [
+        "telegram.org",
+        "www.telegram.org",
+        "web.telegram.org",
+        "t.me"
+      ],
+      "name": "telegram"
+    },
+    {
+      "legitDomains": [
+        "yahoo.com",
+        "www.yahoo.com",
+        "mail.yahoo.com"
+      ],
+      "name": "yahoo"
+    },
+    {
+      "legitDomains": [
+        "zoom.us",
+        "www.zoom.us"
+      ],
+      "name": "zoom"
+    },
+    {
+      "legitDomains": [
+        "dropbox.com",
+        "www.dropbox.com"
+      ],
+      "name": "dropbox"
+    },
+    {
+      "legitDomains": [
+        "adobe.com",
+        "www.adobe.com",
+        "account.adobe.com"
+      ],
+      "name": "adobe"
+    },
+    {
+      "legitDomains": [
+        "github.com",
+        "www.github.com"
+      ],
+      "name": "github"
+    },
+    {
+      "legitDomains": [
+        "wordpress.com",
+        "www.wordpress.com"
+      ],
+      "name": "wordpress"
+    },
+    {
+      "legitDomains": [
+        "canva.com",
+        "www.canva.com"
+      ],
+      "name": "canva"
+    },
+    {
+      "legitDomains": [
+        "spotify.com",
+        "www.spotify.com",
+        "open.spotify.com"
+      ],
+      "name": "spotify"
+    },
+    {
+      "legitDomains": [
+        "steampowered.com",
+        "www.steampowered.com",
+        "store.steampowered.com"
+      ],
+      "name": "steam"
+    },
+    {
+      "legitDomains": [
+        "playstation.com",
+        "www.playstation.com"
+      ],
+      "name": "playstation"
+    },
+    {
+      "legitDomains": [
+        "xbox.com",
+        "www.xbox.com"
+      ],
+      "name": "xbox"
+    },
+    {
+      "legitDomains": [
+        "epicgames.com",
+        "www.epicgames.com"
+      ],
+      "name": "epicgames"
+    },
+    {
+      "legitDomains": [
+        "riotgames.com",
+        "www.riotgames.com"
+      ],
+      "name": "riotgames"
+    },
+    {
+      "legitDomains": [
+        "ebay.com",
+        "www.ebay.com"
+      ],
+      "name": "ebay"
+    },
+    {
+      "legitDomains": [
+        "aliexpress.com",
+        "www.aliexpress.com"
+      ],
+      "name": "aliexpress"
+    },
+    {
+      "legitDomains": [
+        "alibaba.com",
+        "www.alibaba.com"
+      ],
+      "name": "alibaba"
+    },
+    {
+      "legitDomains": [
+        "shein.com",
+        "www.shein.com"
+      ],
+      "name": "shein"
+    },
+    {
+      "legitDomains": [
+        "ikea.com",
+        "www.ikea.com"
+      ],
+      "name": "ikea"
+    },
+    {
+      "legitDomains": [
+        "walmart.com",
+        "www.walmart.com"
+      ],
+      "name": "walmart"
+    },
+    {
+      "legitDomains": [
+        "target.com",
+        "www.target.com"
+      ],
+      "name": "target"
+    },
+    {
+      "legitDomains": [
+        "zara.com",
+        "www.zara.com"
+      ],
+      "name": "zara"
+    },
+    {
+      "legitDomains": [
+        "hm.com",
+        "www2.hm.com"
+      ],
+      "name": "hm"
+    },
+    {
+      "legitDomains": [
+        "booking.com",
+        "www.booking.com"
+      ],
+      "name": "booking"
+    },
+    {
+      "legitDomains": [
+        "airbnb.com",
+        "www.airbnb.com"
+      ],
+      "name": "airbnb"
+    },
+    {
+      "legitDomains": [
+        "expedia.com",
+        "www.expedia.com"
+      ],
+      "name": "expedia"
+    },
+    {
+      "legitDomains": [
+        "tripadvisor.com",
+        "www.tripadvisor.com"
+      ],
+      "name": "tripadvisor"
+    },
+    {
+      "legitDomains": [
+        "uber.com",
+        "www.uber.com"
+      ],
+      "name": "uber"
+    },
+    {
+      "legitDomains": [
+        "visa.com",
+        "www.visa.com"
+      ],
+      "name": "visa"
+    },
+    {
+      "legitDomains": [
+        "mastercard.com",
+        "www.mastercard.com"
+      ],
+      "name": "mastercard"
+    },
+    {
+      "legitDomains": [
+        "stripe.com",
+        "www.stripe.com"
+      ],
+      "name": "stripe"
+    },
+    {
+      "legitDomains": [
+        "wise.com",
+        "www.wise.com"
+      ],
+      "name": "wise"
+    },
+    {
+      "legitDomains": [
+        "revolut.com",
+        "www.revolut.com"
+      ],
+      "name": "revolut"
+    },
+    {
+      "legitDomains": [
+        "westernunion.com",
+        "www.westernunion.com"
+      ],
+      "name": "westernunion"
+    },
+    {
+      "legitDomains": [
+        "moneygram.com",
+        "www.moneygram.com"
+      ],
+      "name": "moneygram"
+    },
+    {
+      "legitDomains": [
+        "binance.com",
+        "www.binance.com"
+      ],
+      "name": "binance"
+    },
+    {
+      "legitDomains": [
+        "kraken.com",
+        "www.kraken.com"
+      ],
+      "name": "kraken"
+    },
+    {
+      "legitDomains": [
+        "bybit.com",
+        "www.bybit.com"
+      ],
+      "name": "bybit"
+    },
+    {
+      "legitDomains": [
+        "americanexpress.com",
+        "www.americanexpress.com"
+      ],
+      "name": "americanexpress"
+    },
+    {
+      "legitDomains": [
+        "citibank.com",
+        "www.citibank.com",
+        "citi.com"
+      ],
+      "name": "citibank"
+    },
+    {
+      "legitDomains": [
+        "hsbc.com",
+        "www.hsbc.com",
+        "hsbc.com.eg",
+        "www.hsbc.com.eg"
+      ],
+      "name": "hsbc"
+    },
+    {
+      "legitDomains": [
+        "barclays.co.uk",
+        "www.barclays.co.uk",
+        "barclays.com"
+      ],
+      "name": "barclays"
+    },
+    {
+      "legitDomains": [
+        "sc.com",
+        "www.sc.com"
+      ],
+      "name": "standardchartered"
+    },
+    {
+      "legitDomains": [
+        "db.com",
+        "www.db.com"
+      ],
+      "name": "deutschebank"
+    },
+    {
+      "legitDomains": [
+        "bnpparibas.com",
+        "www.bnpparibas.com"
+      ],
+      "name": "bnpparibas"
+    },
+    {
+      "legitDomains": [
+        "santander.com",
+        "www.santander.com"
+      ],
+      "name": "santander"
+    },
+    {
+      "legitDomains": [
+        "dhl.com",
+        "www.dhl.com"
+      ],
+      "name": "dhl"
+    },
+    {
+      "legitDomains": [
+        "aramex.com",
+        "www.aramex.com"
+      ],
+      "name": "aramex"
+    },
+    {
+      "legitDomains": [
+        "cibeg.com",
+        "www.cibeg.com"
+      ],
+      "name": "cib"
+    },
+    {
+      "legitDomains": [
+        "nbe.com.eg",
+        "www.nbe.com.eg"
+      ],
+      "name": "nbe"
+    },
+    {
+      "legitDomains": [
+        "banquemisr.com",
+        "www.banquemisr.com"
+      ],
+      "name": "banquemisr"
+    },
+    {
+      "legitDomains": [
+        "qnb.com.eg",
+        "www.qnb.com.eg"
+      ],
+      "name": "qnb"
+    },
+    {
+      "legitDomains": [
+        "cbe.org.eg",
+        "www.cbe.org.eg"
+      ],
+      "name": "cbe"
+    },
+    {
+      "legitDomains": [
+        "alexbank.com",
+        "www.alexbank.com"
+      ],
+      "name": "alexbank"
+    },
+    {
+      "legitDomains": [
+        "aaib.com",
+        "www.aaib.com"
+      ],
+      "name": "aaib"
+    },
+    {
+      "legitDomains": [
+        "vodafone.com.eg",
+        "www.vodafone.com.eg",
+        "web.vodafone.com.eg"
+      ],
+      "name": "vodafone"
+    },
+    {
+      "legitDomains": [
+        "orange.eg",
+        "www.orange.eg"
+      ],
+      "name": "orange"
+    },
+    {
+      "legitDomains": [
+        "te.eg",
+        "www.te.eg"
+      ],
+      "name": "we"
+    },
+    {
+      "legitDomains": [
+        "etisalat.com.eg",
+        "www.etisalat.com.eg",
+        "eand.com.eg"
+      ],
+      "name": "etisalat"
+    },
+    {
+      "legitDomains": [
+        "fawry.com",
+        "www.fawry.com"
+      ],
+      "name": "fawry"
+    },
+    {
+      "legitDomains": [
+        "instapay.eg",
+        "www.instapay.eg"
+      ],
+      "name": "instapay"
+    },
+    {
+      "legitDomains": [
+        "valu.com.eg",
+        "www.valu.com.eg"
+      ],
+      "name": "valu"
+    },
+    {
+      "legitDomains": [
+        "jumia.com.eg",
+        "www.jumia.com.eg"
+      ],
+      "name": "jumia"
+    },
+    {
+      "legitDomains": [
+        "noon.com",
+        "www.noon.com"
+      ],
+      "name": "noon"
+    },
+    {
+      "legitDomains": [
+        "talabat.com",
+        "www.talabat.com"
+      ],
+      "name": "talabat"
+    },
+    {
+      "legitDomains": [
+        "elmenus.com",
+        "www.elmenus.com"
+      ],
+      "name": "elmenus"
+    },
+    {
+      "legitDomains": [
+        "breadfast.com",
+        "www.breadfast.com"
+      ],
+      "name": "breadfast"
+    },
+    {
+      "legitDomains": [
+        "egyptair.com",
+        "www.egyptair.com"
+      ],
+      "name": "egyptair"
+    },
+    {
+      "legitDomains": [
+        "almosafer.com",
+        "www.almosafer.com"
+      ],
+      "name": "almosafer"
+    },
+    {
+      "legitDomains": [
+        "careem.com",
+        "www.careem.com"
+      ],
+      "name": "careem"
+    },
+    {
+      "legitDomains": [
+        "swvl.com",
+        "www.swvl.com"
+      ],
+      "name": "swvl"
+    },
+    {
+      "legitDomains": [
+        "shahid.net",
+        "www.shahid.net"
+      ],
+      "name": "shahid"
+    },
+    {
+      "legitDomains": [
+        "anghami.com",
+        "www.anghami.com"
+      ],
+      "name": "anghami"
+    },
+    {
+      "legitDomains": [
+        "vezeeta.com",
+        "www.vezeeta.com"
+      ],
+      "name": "vezeeta"
+    },
+    {
+      "legitDomains": [
+        "egyptpost.org",
+        "www.egyptpost.org"
+      ],
+      "name": "egyptpost"
+    },
+    {
+      "legitDomains": [
+        "coursera.org",
+        "www.coursera.org"
+      ],
+      "name": "coursera"
+    },
+    {
+      "legitDomains": [
+        "udacity.com",
+        "www.udacity.com"
+      ],
+      "name": "udacity"
+    },
+    {
+      "legitDomains": [
+        "edx.org",
+        "www.edx.org"
+      ],
+      "name": "edx"
+    },
+    {
+      "legitDomains": [
+        "udemy.com",
+        "www.udemy.com"
+      ],
+      "name": "udemy"
+    },
+    {
+      "legitDomains": [
+        "khanacademy.org",
+        "www.khanacademy.org"
+      ],
+      "name": "khanacademy"
+    },
+    {
+      "legitDomains": [
+        "skillshare.com",
+        "www.skillshare.com"
+      ],
+      "name": "skillshare"
+    },
+    {
+      "legitDomains": [
+        "pluralsight.com",
+        "www.pluralsight.com"
+      ],
+      "name": "pluralsight"
+    },
+    {
+      "legitDomains": [
+        "codecademy.com",
+        "www.codecademy.com"
+      ],
+      "name": "codecademy"
+    },
+    {
+      "legitDomains": [
+        "freecodecamp.org",
+        "www.freecodecamp.org"
+      ],
+      "name": "freecodecamp"
+    },
+    {
+      "legitDomains": [
+        "datacamp.com",
+        "www.datacamp.com"
+      ],
+      "name": "datacamp"
+    },
+    {
+      "legitDomains": [
+        "eyouthlearning.com",
+        "www.eyouthlearning.com",
+        "eyouthegypt.com",
+        "www.eyouthegypt.com"
+      ],
+      "name": "eyouth"
+    },
+    {
+      "legitDomains": [
+        "almentor.net",
+        "www.almentor.net"
+      ],
+      "name": "almentor"
+    },
+    {
+      "legitDomains": [
+        "edraak.org",
+        "www.edraak.org"
+      ],
+      "name": "edraak"
+    },
+    {
+      "legitDomains": [
+        "nafham.com",
+        "www.nafham.com"
+      ],
+      "name": "nafham"
+    },
+    {
+      "legitDomains": [
+        "rwaq.org",
+        "www.rwaq.org"
+      ],
+      "name": "rwaq"
+    }
   ]
 }
