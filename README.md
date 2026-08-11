@@ -17,8 +17,16 @@ By combining offline heuristic analysis with live threat intelligence, PhishGuar
 1.  **Layer 1 (`typosquat.js` & `brands.json`):** A locally executed algorithm that calculates the edit distance of the current URL against a customizable JSON list of high-value target brands (e.g., banking, shipping, and government portals).
 2.  **Layer 2 (`background.js`):** The service worker that orchestrates API calls to Google Safe Browsing and handles tab redirection via Chrome's extension APIs.
 3.  **Layer 3 (`content.js`):** A DOM-scanning script that analyzes visible page text and HTML structure in real-time.
-4.  **Layer 4 (`popup.html` & `blocked.html`):** The user interface layer, built with accessibility in mind, utilizing `chrome.storage.local` to securely save user configurations.
+4. **Layer 4 (`popup.html`, `blocked.html`, and associated UI logic):**
+   The Human Interaction & Security Experience Layer.
 
+   Layer 4 translates technical threat signals into clear, actionable
+   decisions, designed around human behavior, trust, cognitive load, and
+   decision-making under risk.
+
+   It transforms detection into effective human protection while providing
+   PhishTrap Guardian with a polished, accessible, and trustworthy product
+   experience.
 ##  Installation & Setup (Developer Mode)
 
 To install and run Guardian PhishGuard locally:
