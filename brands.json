@@ -871,6 +871,1755 @@
         "www.rwaq.org"
       ],
       "name": "rwaq"
+    },
+    {
+      "legitDomains": [
+        "wikipedia.org",
+        "www.wikipedia.org"
+      ],
+      "name": "wikipedia"
+    },
+    {
+      "legitDomains": [
+        "bing.com",
+        "www.bing.com"
+      ],
+      "name": "bing"
+    },
+    {
+      "legitDomains": [
+        "chatgpt.com",
+        "www.chatgpt.com"
+      ],
+      "name": "chatgpt"
+    },
+    {
+      "legitDomains": [
+        "twitch.tv",
+        "www.twitch.tv"
+      ],
+      "name": "twitch"
+    },
+    {
+      "legitDomains": [
+        "imdb.com",
+        "www.imdb.com"
+      ],
+      "name": "imdb"
+    },
+    {
+      "legitDomains": [
+        "cnn.com",
+        "www.cnn.com"
+      ],
+      "name": "cnn"
+    },
+    {
+      "legitDomains": [
+        "bbc.com",
+        "www.bbc.com",
+        "bbc.co.uk"
+      ],
+      "name": "bbc"
+    },
+    {
+      "legitDomains": [
+        "nytimes.com",
+        "www.nytimes.com"
+      ],
+      "name": "nytimes"
+    },
+    {
+      "legitDomains": [
+        "weather.com",
+        "www.weather.com"
+      ],
+      "name": "weather"
+    },
+    {
+      "legitDomains": [
+        "notion.so",
+        "www.notion.so"
+      ],
+      "name": "notion"
+    },
+    {
+      "legitDomains": [
+        "slack.com",
+        "www.slack.com"
+      ],
+      "name": "slack"
+    },
+    {
+      "legitDomains": [
+        "trello.com",
+        "www.trello.com"
+      ],
+      "name": "trello"
+    },
+    {
+      "legitDomains": [
+        "figma.com",
+        "www.figma.com"
+      ],
+      "name": "figma"
+    },
+    {
+      "legitDomains": [
+        "reuters.com",
+        "www.reuters.com"
+      ],
+      "name": "reuters"
+    },
+    {
+      "legitDomains": [
+        "forbes.com",
+        "www.forbes.com"
+      ],
+      "name": "forbes"
+    },
+    {
+      "legitDomains": [
+        "bloomberg.com",
+        "www.bloomberg.com"
+      ],
+      "name": "bloomberg"
+    },
+    {
+      "legitDomains": [
+        "techcrunch.com",
+        "www.techcrunch.com"
+      ],
+      "name": "techcrunch"
+    },
+    {
+      "legitDomains": [
+        "theverge.com",
+        "www.theverge.com"
+      ],
+      "name": "theverge"
+    },
+    {
+      "legitDomains": [
+        "wired.com",
+        "www.wired.com"
+      ],
+      "name": "wired"
+    },
+    {
+      "legitDomains": [
+        "arstechnica.com",
+        "www.arstechnica.com"
+      ],
+      "name": "arstechnica"
+    },
+    {
+      "legitDomains": [
+        "cnet.com",
+        "www.cnet.com"
+      ],
+      "name": "cnet"
+    },
+    {
+      "legitDomains": [
+        "engadget.com",
+        "www.engadget.com"
+      ],
+      "name": "engadget"
+    },
+    {
+      "legitDomains": [
+        "techradar.com",
+        "www.techradar.com"
+      ],
+      "name": "techradar"
+    },
+    {
+      "legitDomains": [
+        "tomshardware.com",
+        "www.tomshardware.com"
+      ],
+      "name": "tomshardware"
+    },
+    {
+      "legitDomains": [
+        "digitaltrends.com",
+        "www.digitaltrends.com"
+      ],
+      "name": "digitaltrends"
+    },
+    {
+      "legitDomains": [
+        "howtogeek.com",
+        "www.howtogeek.com"
+      ],
+      "name": "howtogeek"
+    },
+    {
+      "legitDomains": [
+        "makeuseof.com",
+        "www.makeuseof.com"
+      ],
+      "name": "makeuseof"
+    },
+    {
+      "legitDomains": [
+        "gsmarena.com",
+        "www.gsmarena.com"
+      ],
+      "name": "gsmarena"
+    },
+    {
+      "legitDomains": [
+        "xda-developers.com",
+        "www.xda-developers.com"
+      ],
+      "name": "xda"
+    },
+    {
+      "legitDomains": [
+        "android.com",
+        "www.android.com"
+      ],
+      "name": "android"
+    },
+    {
+      "legitDomains": [
+        "androidauthority.com",
+        "www.androidauthority.com"
+      ],
+      "name": "androidauthority"
+    },
+    {
+      "legitDomains": [
+        "9to5google.com",
+        "www.9to5google.com"
+      ],
+      "name": "9to5google"
+    },
+    {
+      "legitDomains": [
+        "9to5mac.com",
+        "www.9to5mac.com"
+      ],
+      "name": "9to5mac"
+    },
+    {
+      "legitDomains": [
+        "macrumors.com",
+        "www.macrumors.com"
+      ],
+      "name": "macrumors"
+    },
+    {
+      "legitDomains": [
+        "mozilla.org",
+        "www.mozilla.org"
+      ],
+      "name": "mozilla"
+    },
+    {
+      "legitDomains": [
+        "python.org",
+        "www.python.org"
+      ],
+      "name": "python"
+    },
+    {
+      "legitDomains": [
+        "stackoverflow.com",
+        "www.stackoverflow.com"
+      ],
+      "name": "stackoverflow"
+    },
+    {
+      "legitDomains": [
+        "superuser.com",
+        "www.superuser.com"
+      ],
+      "name": "superuser"
+    },
+    {
+      "legitDomains": [
+        "serverfault.com",
+        "www.serverfault.com"
+      ],
+      "name": "serverfault"
+    },
+    {
+      "legitDomains": [
+        "askubuntu.com",
+        "www.askubuntu.com"
+      ],
+      "name": "askubuntu"
+    },
+    {
+      "legitDomains": [
+        "geeksforgeeks.org",
+        "www.geeksforgeeks.org"
+      ],
+      "name": "geeksforgeeks"
+    },
+    {
+      "legitDomains": [
+        "w3schools.com",
+        "www.w3schools.com"
+      ],
+      "name": "w3schools"
+    },
+    {
+      "legitDomains": [
+        "developer.mozilla.org"
+      ],
+      "name": "mdn"
+    },
+    {
+      "legitDomains": [
+        "dev.to",
+        "www.dev.to"
+      ],
+      "name": "devto"
+    },
+    {
+      "legitDomains": [
+        "leetcode.com",
+        "www.leetcode.com"
+      ],
+      "name": "leetcode"
+    },
+    {
+      "legitDomains": [
+        "hackerrank.com",
+        "www.hackerrank.com"
+      ],
+      "name": "hackerrank"
+    },
+    {
+      "legitDomains": [
+        "hackerearth.com",
+        "www.hackerearth.com"
+      ],
+      "name": "hackerearth"
+    },
+    {
+      "legitDomains": [
+        "replit.com",
+        "www.replit.com"
+      ],
+      "name": "replit"
+    },
+    {
+      "legitDomains": [
+        "codepen.io",
+        "www.codepen.io"
+      ],
+      "name": "codepen"
+    },
+    {
+      "legitDomains": [
+        "jsfiddle.net",
+        "www.jsfiddle.net"
+      ],
+      "name": "jsfiddle"
+    },
+    {
+      "legitDomains": [
+        "codesandbox.io",
+        "www.codesandbox.io"
+      ],
+      "name": "codesandbox"
+    },
+    {
+      "legitDomains": [
+        "gitlab.com",
+        "www.gitlab.com"
+      ],
+      "name": "gitlab"
+    },
+    {
+      "legitDomains": [
+        "bitbucket.org",
+        "www.bitbucket.org"
+      ],
+      "name": "bitbucket"
+    },
+    {
+      "legitDomains": [
+        "npmjs.com",
+        "www.npmjs.com"
+      ],
+      "name": "npm"
+    },
+    {
+      "legitDomains": [
+        "pypi.org",
+        "www.pypi.org"
+      ],
+      "name": "pypi"
+    },
+    {
+      "legitDomains": [
+        "docker.com",
+        "www.docker.com"
+      ],
+      "name": "docker"
+    },
+    {
+      "legitDomains": [
+        "kubernetes.io",
+        "www.kubernetes.io"
+      ],
+      "name": "kubernetes"
+    },
+    {
+      "legitDomains": [
+        "terraform.io",
+        "www.terraform.io"
+      ],
+      "name": "terraform"
+    },
+    {
+      "legitDomains": [
+        "ansible.com",
+        "www.ansible.com"
+      ],
+      "name": "ansible"
+    },
+    {
+      "legitDomains": [
+        "redhat.com",
+        "www.redhat.com"
+      ],
+      "name": "redhat"
+    },
+    {
+      "legitDomains": [
+        "ubuntu.com",
+        "www.ubuntu.com"
+      ],
+      "name": "ubuntu"
+    },
+    {
+      "legitDomains": [
+        "debian.org",
+        "www.debian.org"
+      ],
+      "name": "debian"
+    },
+    {
+      "legitDomains": [
+        "kali.org",
+        "www.kali.org"
+      ],
+      "name": "kali"
+    },
+    {
+      "legitDomains": [
+        "archlinux.org",
+        "www.archlinux.org"
+      ],
+      "name": "archlinux"
+    },
+    {
+      "legitDomains": [
+        "linux.org",
+        "www.linux.org"
+      ],
+      "name": "linux"
+    },
+    {
+      "legitDomains": [
+        "kernel.org",
+        "www.kernel.org"
+      ],
+      "name": "kernel"
+    },
+    {
+      "legitDomains": [
+        "sourceforge.net",
+        "www.sourceforge.net"
+      ],
+      "name": "sourceforge"
+    },
+    {
+      "legitDomains": [
+        "oracle.com",
+        "www.oracle.com"
+      ],
+      "name": "oracle"
+    },
+    {
+      "legitDomains": [
+        "ibm.com",
+        "www.ibm.com"
+      ],
+      "name": "ibm"
+    },
+    {
+      "legitDomains": [
+        "cisco.com",
+        "www.cisco.com"
+      ],
+      "name": "cisco"
+    },
+    {
+      "legitDomains": [
+        "intel.com",
+        "www.intel.com"
+      ],
+      "name": "intel"
+    },
+    {
+      "legitDomains": [
+        "amd.com",
+        "www.amd.com"
+      ],
+      "name": "amd"
+    },
+    {
+      "legitDomains": [
+        "nvidia.com",
+        "www.nvidia.com"
+      ],
+      "name": "nvidia"
+    },
+    {
+      "legitDomains": [
+        "samsung.com",
+        "www.samsung.com"
+      ],
+      "name": "samsung"
+    },
+    {
+      "legitDomains": [
+        "sony.com",
+        "www.sony.com"
+      ],
+      "name": "sony"
+    },
+    {
+      "legitDomains": [
+        "lg.com",
+        "www.lg.com"
+      ],
+      "name": "lg"
+    },
+    {
+      "legitDomains": [
+        "huawei.com",
+        "www.huawei.com"
+      ],
+      "name": "huawei"
+    },
+    {
+      "legitDomains": [
+        "xiaomi.com",
+        "www.xiaomi.com"
+      ],
+      "name": "xiaomi"
+    },
+    {
+      "legitDomains": [
+        "dell.com",
+        "www.dell.com"
+      ],
+      "name": "dell"
+    },
+    {
+      "legitDomains": [
+        "hp.com",
+        "www.hp.com"
+      ],
+      "name": "hp"
+    },
+    {
+      "legitDomains": [
+        "lenovo.com",
+        "www.lenovo.com"
+      ],
+      "name": "lenovo"
+    },
+    {
+      "legitDomains": [
+        "asus.com",
+        "www.asus.com"
+      ],
+      "name": "asus"
+    },
+    {
+      "legitDomains": [
+        "acer.com",
+        "www.acer.com"
+      ],
+      "name": "acer"
+    },
+    {
+      "legitDomains": [
+        "cloudflare.com",
+        "www.cloudflare.com"
+      ],
+      "name": "cloudflare"
+    },
+    {
+      "legitDomains": [
+        "digitalocean.com",
+        "www.digitalocean.com"
+      ],
+      "name": "digitalocean"
+    },
+    {
+      "legitDomains": [
+        "heroku.com",
+        "www.heroku.com"
+      ],
+      "name": "heroku"
+    },
+    {
+      "legitDomains": [
+        "vercel.com",
+        "www.vercel.com"
+      ],
+      "name": "vercel"
+    },
+    {
+      "legitDomains": [
+        "netlify.com",
+        "www.netlify.com"
+      ],
+      "name": "netlify"
+    },
+    {
+      "legitDomains": [
+        "atlassian.com",
+        "www.atlassian.com"
+      ],
+      "name": "atlassian"
+    },
+    {
+      "legitDomains": [
+        "jira.com",
+        "www.jira.com"
+      ],
+      "name": "jira"
+    },
+    {
+      "legitDomains": [
+        "confluence.com",
+        "www.confluence.com"
+      ],
+      "name": "confluence"
+    },
+    {
+      "legitDomains": [
+        "asana.com",
+        "www.asana.com"
+      ],
+      "name": "asana"
+    },
+    {
+      "legitDomains": [
+        "monday.com",
+        "www.monday.com"
+      ],
+      "name": "monday"
+    },
+    {
+      "legitDomains": [
+        "clickup.com",
+        "www.clickup.com"
+      ],
+      "name": "clickup"
+    },
+    {
+      "legitDomains": [
+        "todoist.com",
+        "www.todoist.com"
+      ],
+      "name": "todoist"
+    },
+    {
+      "legitDomains": [
+        "evernote.com",
+        "www.evernote.com"
+      ],
+      "name": "evernote"
+    },
+    {
+      "legitDomains": [
+        "grammarly.com",
+        "www.grammarly.com"
+      ],
+      "name": "grammarly"
+    },
+    {
+      "legitDomains": [
+        "deepl.com",
+        "www.deepl.com"
+      ],
+      "name": "deepl"
+    },
+    {
+      "legitDomains": [
+        "quora.com",
+        "www.quora.com"
+      ],
+      "name": "quora"
+    },
+    {
+      "legitDomains": [
+        "medium.com",
+        "www.medium.com"
+      ],
+      "name": "medium"
+    },
+    {
+      "legitDomains": [
+        "tumblr.com",
+        "www.tumblr.com"
+      ],
+      "name": "tumblr"
+    },
+    {
+      "legitDomains": [
+        "fandom.com",
+        "www.fandom.com"
+      ],
+      "name": "fandom"
+    },
+    {
+      "legitDomains": [
+        "archive.org",
+        "www.archive.org"
+      ],
+      "name": "archive"
+    },
+    {
+      "legitDomains": [
+        "wiktionary.org",
+        "www.wiktionary.org"
+      ],
+      "name": "wiktionary"
+    },
+    {
+      "legitDomains": [
+        "wikimedia.org",
+        "www.wikimedia.org"
+      ],
+      "name": "wikimedia"
+    },
+    {
+      "legitDomains": [
+        "goodreads.com",
+        "www.goodreads.com"
+      ],
+      "name": "goodreads"
+    },
+    {
+      "legitDomains": [
+        "openlibrary.org",
+        "www.openlibrary.org"
+      ],
+      "name": "openlibrary"
+    },
+    {
+      "legitDomains": [
+        "gutenberg.org",
+        "www.gutenberg.org"
+      ],
+      "name": "gutenberg"
+    },
+    {
+      "legitDomains": [
+        "scribd.com",
+        "www.scribd.com"
+      ],
+      "name": "scribd"
+    },
+    {
+      "legitDomains": [
+        "slideshare.net",
+        "www.slideshare.net"
+      ],
+      "name": "slideshare"
+    },
+    {
+      "legitDomains": [
+        "researchgate.net",
+        "www.researchgate.net"
+      ],
+      "name": "researchgate"
+    },
+    {
+      "legitDomains": [
+        "academia.edu",
+        "www.academia.edu"
+      ],
+      "name": "academia"
+    },
+    {
+      "legitDomains": [
+        "jstor.org",
+        "www.jstor.org"
+      ],
+      "name": "jstor"
+    },
+    {
+      "legitDomains": [
+        "nature.com",
+        "www.nature.com"
+      ],
+      "name": "nature"
+    },
+    {
+      "legitDomains": [
+        "sciencedirect.com",
+        "www.sciencedirect.com"
+      ],
+      "name": "sciencedirect"
+    },
+    {
+      "legitDomains": [
+        "ieee.org",
+        "www.ieee.org"
+      ],
+      "name": "ieee"
+    },
+    {
+      "legitDomains": [
+        "acm.org",
+        "www.acm.org"
+      ],
+      "name": "acm"
+    },
+    {
+      "legitDomains": [
+        "arxiv.org",
+        "www.arxiv.org"
+      ],
+      "name": "arxiv"
+    },
+    {
+      "legitDomains": [
+        "pubmed.ncbi.nlm.nih.gov"
+      ],
+      "name": "pubmed"
+    },
+    {
+      "legitDomains": [
+        "ncbi.nlm.nih.gov",
+        "www.ncbi.nlm.nih.gov"
+      ],
+      "name": "ncbi"
+    },
+    {
+      "legitDomains": [
+        "who.int",
+        "www.who.int"
+      ],
+      "name": "who"
+    },
+    {
+      "legitDomains": [
+        "nasa.gov",
+        "www.nasa.gov"
+      ],
+      "name": "nasa"
+    },
+    {
+      "legitDomains": [
+        "un.org",
+        "www.un.org"
+      ],
+      "name": "un"
+    },
+    {
+      "legitDomains": [
+        "europa.eu",
+        "www.europa.eu"
+      ],
+      "name": "europeanunion"
+    },
+    {
+      "legitDomains": [
+        "gov.uk",
+        "www.gov.uk"
+      ],
+      "name": "govuk"
+    },
+    {
+      "legitDomains": [
+        "usa.gov",
+        "www.usa.gov"
+      ],
+      "name": "usa"
+    },
+    {
+      "legitDomains": [
+        "aljazeera.com",
+        "www.aljazeera.com"
+      ],
+      "name": "aljazeera"
+    },
+    {
+      "legitDomains": [
+        "dw.com",
+        "www.dw.com"
+      ],
+      "name": "dw"
+    },
+    {
+      "legitDomains": [
+        "france24.com",
+        "www.france24.com"
+      ],
+      "name": "france24"
+    },
+    {
+      "legitDomains": [
+        "euronews.com",
+        "www.euronews.com"
+      ],
+      "name": "euronews"
+    },
+    {
+      "legitDomains": [
+        "apnews.com",
+        "www.apnews.com"
+      ],
+      "name": "apnews"
+    },
+    {
+      "legitDomains": [
+        "theguardian.com",
+        "www.theguardian.com"
+      ],
+      "name": "theguardian"
+    },
+    {
+      "legitDomains": [
+        "washingtonpost.com",
+        "www.washingtonpost.com"
+      ],
+      "name": "washingtonpost"
+    },
+    {
+      "legitDomains": [
+        "foxnews.com",
+        "www.foxnews.com"
+      ],
+      "name": "foxnews"
+    },
+    {
+      "legitDomains": [
+        "nbcnews.com",
+        "www.nbcnews.com"
+      ],
+      "name": "nbcnews"
+    },
+    {
+      "legitDomains": [
+        "cbsnews.com",
+        "www.cbsnews.com"
+      ],
+      "name": "cbsnews"
+    },
+    {
+      "legitDomains": [
+        "usatoday.com",
+        "www.usatoday.com"
+      ],
+      "name": "usatoday"
+    },
+    {
+      "legitDomains": [
+        "time.com",
+        "www.time.com"
+      ],
+      "name": "time"
+    },
+    {
+      "legitDomains": [
+        "newsweek.com",
+        "www.newsweek.com"
+      ],
+      "name": "newsweek"
+    },
+    {
+      "legitDomains": [
+        "politico.com",
+        "www.politico.com"
+      ],
+      "name": "politico"
+    },
+    {
+      "legitDomains": [
+        "espn.com",
+        "www.espn.com"
+      ],
+      "name": "espn"
+    },
+    {
+      "legitDomains": [
+        "fifa.com",
+        "www.fifa.com"
+      ],
+      "name": "fifa"
+    },
+    {
+      "legitDomains": [
+        "uefa.com",
+        "www.uefa.com"
+      ],
+      "name": "uefa"
+    },
+    {
+      "legitDomains": [
+        "nike.com",
+        "www.nike.com"
+      ],
+      "name": "nike"
+    },
+    {
+      "legitDomains": [
+        "adidas.com",
+        "www.adidas.com"
+      ],
+      "name": "adidas"
+    },
+    {
+      "legitDomains": [
+        "puma.com",
+        "www.puma.com"
+      ],
+      "name": "puma"
+    },
+    {
+      "legitDomains": [
+        "underarmour.com",
+        "www.underarmour.com"
+      ],
+      "name": "underarmour"
+    },
+    {
+      "legitDomains": [
+        "reebok.com",
+        "www.reebok.com"
+      ],
+      "name": "reebok"
+    },
+    {
+      "legitDomains": [
+        "newbalance.com",
+        "www.newbalance.com"
+      ],
+      "name": "newbalance"
+    },
+    {
+      "legitDomains": [
+        "uniqlo.com",
+        "www.uniqlo.com"
+      ],
+      "name": "uniqlo"
+    },
+    {
+      "legitDomains": [
+        "gap.com",
+        "www.gap.com"
+      ],
+      "name": "gap"
+    },
+    {
+      "legitDomains": [
+        "asos.com",
+        "www.asos.com"
+      ],
+      "name": "asos"
+    },
+    {
+      "legitDomains": [
+        "lululemon.com",
+        "www.lululemon.com"
+      ],
+      "name": "lululemon"
+    },
+    {
+      "legitDomains": [
+        "sephora.com",
+        "www.sephora.com"
+      ],
+      "name": "sephora"
+    },
+    {
+      "legitDomains": [
+        "ulta.com",
+        "www.ulta.com"
+      ],
+      "name": "ulta"
+    },
+    {
+      "legitDomains": [
+        "costco.com",
+        "www.costco.com"
+      ],
+      "name": "costco"
+    },
+    {
+      "legitDomains": [
+        "homedepot.com",
+        "www.homedepot.com"
+      ],
+      "name": "homedepot"
+    },
+    {
+      "legitDomains": [
+        "lowes.com",
+        "www.lowes.com"
+      ],
+      "name": "lowes"
+    },
+    {
+      "legitDomains": [
+        "wayfair.com",
+        "www.wayfair.com"
+      ],
+      "name": "wayfair"
+    },
+    {
+      "legitDomains": [
+        "newegg.com",
+        "www.newegg.com"
+      ],
+      "name": "newegg"
+    },
+    {
+      "legitDomains": [
+        "bestbuy.com",
+        "www.bestbuy.com"
+      ],
+      "name": "bestbuy"
+    },
+    {
+      "legitDomains": [
+        "macys.com",
+        "www.macys.com"
+      ],
+      "name": "macys"
+    },
+    {
+      "legitDomains": [
+        "nordstrom.com",
+        "www.nordstrom.com"
+      ],
+      "name": "nordstrom"
+    },
+    {
+      "legitDomains": [
+        "kohls.com",
+        "www.kohls.com"
+      ],
+      "name": "kohls"
+    },
+    {
+      "legitDomains": [
+        "footlocker.com",
+        "www.footlocker.com"
+      ],
+      "name": "footlocker"
+    },
+    {
+      "legitDomains": [
+        "walgreens.com",
+        "www.walgreens.com"
+      ],
+      "name": "walgreens"
+    },
+    {
+      "legitDomains": [
+        "cvs.com",
+        "www.cvs.com"
+      ],
+      "name": "cvs"
+    },
+    {
+      "legitDomains": [
+        "tesco.com",
+        "www.tesco.com"
+      ],
+      "name": "tesco"
+    },
+    {
+      "legitDomains": [
+        "carrefour.com",
+        "www.carrefour.com"
+      ],
+      "name": "carrefour"
+    },
+    {
+      "legitDomains": [
+        "aldi.us",
+        "www.aldi.us"
+      ],
+      "name": "aldi"
+    },
+    {
+      "legitDomains": [
+        "lidl.com",
+        "www.lidl.com"
+      ],
+      "name": "lidl"
+    },
+    {
+      "legitDomains": [
+        "kroger.com",
+        "www.kroger.com"
+      ],
+      "name": "kroger"
+    },
+    {
+      "legitDomains": [
+        "wholefoodsmarket.com",
+        "www.wholefoodsmarket.com"
+      ],
+      "name": "wholefoods"
+    },
+    {
+      "legitDomains": [
+        "doordash.com",
+        "www.doordash.com"
+      ],
+      "name": "doordash"
+    },
+    {
+      "legitDomains": [
+        "ubereats.com",
+        "www.ubereats.com"
+      ],
+      "name": "ubereats"
+    },
+    {
+      "legitDomains": [
+        "grubhub.com",
+        "www.grubhub.com"
+      ],
+      "name": "grubhub"
+    },
+    {
+      "legitDomains": [
+        "deliveroo.com",
+        "www.deliveroo.com"
+      ],
+      "name": "deliveroo"
+    },
+    {
+      "legitDomains": [
+        "instacart.com",
+        "www.instacart.com"
+      ],
+      "name": "instacart"
+    },
+    {
+      "legitDomains": [
+        "lyft.com",
+        "www.lyft.com"
+      ],
+      "name": "lyft"
+    },
+    {
+      "legitDomains": [
+        "bolt.eu",
+        "www.bolt.eu"
+      ],
+      "name": "bolt"
+    },
+    {
+      "legitDomains": [
+        "grab.com",
+        "www.grab.com"
+      ],
+      "name": "grab"
+    },
+    {
+      "legitDomains": [
+        "hotels.com",
+        "www.hotels.com"
+      ],
+      "name": "hotels"
+    },
+    {
+      "legitDomains": [
+        "agoda.com",
+        "www.agoda.com"
+      ],
+      "name": "agoda"
+    },
+    {
+      "legitDomains": [
+        "trip.com",
+        "www.trip.com"
+      ],
+      "name": "trip"
+    },
+    {
+      "legitDomains": [
+        "kayak.com",
+        "www.kayak.com"
+      ],
+      "name": "kayak"
+    },
+    {
+      "legitDomains": [
+        "skyscanner.net",
+        "www.skyscanner.net"
+      ],
+      "name": "skyscanner"
+    },
+    {
+      "legitDomains": [
+        "priceline.com",
+        "www.priceline.com"
+      ],
+      "name": "priceline"
+    },
+    {
+      "legitDomains": [
+        "vrbo.com",
+        "www.vrbo.com"
+      ],
+      "name": "vrbo"
+    },
+    {
+      "legitDomains": [
+        "hostelworld.com",
+        "www.hostelworld.com"
+      ],
+      "name": "hostelworld"
+    },
+    {
+      "legitDomains": [
+        "lonelyplanet.com",
+        "www.lonelyplanet.com"
+      ],
+      "name": "lonelyplanet"
+    },
+    {
+      "legitDomains": [
+        "flightradar24.com",
+        "www.flightradar24.com"
+      ],
+      "name": "flightradar24"
+    },
+    {
+      "legitDomains": [
+        "flightaware.com",
+        "www.flightaware.com"
+      ],
+      "name": "flightaware"
+    },
+    {
+      "legitDomains": [
+        "emirates.com",
+        "www.emirates.com"
+      ],
+      "name": "emirates"
+    },
+    {
+      "legitDomains": [
+        "qatarairways.com",
+        "www.qatarairways.com"
+      ],
+      "name": "qatarairways"
+    },
+    {
+      "legitDomains": [
+        "etihad.com",
+        "www.etihad.com"
+      ],
+      "name": "etihad"
+    },
+    {
+      "legitDomains": [
+        "lufthansa.com",
+        "www.lufthansa.com"
+      ],
+      "name": "lufthansa"
+    },
+    {
+      "legitDomains": [
+        "britishairways.com",
+        "www.britishairways.com"
+      ],
+      "name": "britishairways"
+    },
+    {
+      "legitDomains": [
+        "ryanair.com",
+        "www.ryanair.com"
+      ],
+      "name": "ryanair"
+    },
+    {
+      "legitDomains": [
+        "easyjet.com",
+        "www.easyjet.com"
+      ],
+      "name": "easyjet"
+    },
+    {
+      "legitDomains": [
+        "turkishairlines.com",
+        "www.turkishairlines.com"
+      ],
+      "name": "turkishairlines"
+    },
+    {
+      "legitDomains": [
+        "singaporeair.com",
+        "www.singaporeair.com"
+      ],
+      "name": "singaporeair"
+    },
+    {
+      "legitDomains": [
+        "airfrance.com",
+        "www.airfrance.com"
+      ],
+      "name": "airfrance"
+    },
+    {
+      "legitDomains": [
+        "klm.com",
+        "www.klm.com"
+      ],
+      "name": "klm"
+    },
+    {
+      "legitDomains": [
+        "marriott.com",
+        "www.marriott.com"
+      ],
+      "name": "marriott"
+    },
+    {
+      "legitDomains": [
+        "hilton.com",
+        "www.hilton.com"
+      ],
+      "name": "hilton"
+    },
+    {
+      "legitDomains": [
+        "hyatt.com",
+        "www.hyatt.com"
+      ],
+      "name": "hyatt"
+    },
+    {
+      "legitDomains": [
+        "accor.com",
+        "www.accor.com"
+      ],
+      "name": "accor"
+    },
+    {
+      "legitDomains": [
+        "ihg.com",
+        "www.ihg.com"
+      ],
+      "name": "ihg"
+    },
+    {
+      "legitDomains": [
+        "radissonhotels.com",
+        "www.radissonhotels.com"
+      ],
+      "name": "radisson"
+    },
+    {
+      "legitDomains": [
+        "bestwestern.com",
+        "www.bestwestern.com"
+      ],
+      "name": "bestwestern"
+    },
+    {
+      "legitDomains": [
+        "threads.net",
+        "www.threads.net"
+      ],
+      "name": "threads"
+    },
+    {
+      "legitDomains": [
+        "mastodon.social",
+        "www.mastodon.social"
+      ],
+      "name": "mastodon"
+    },
+    {
+      "legitDomains": [
+        "bluesky.app",
+        "www.bluesky.app"
+      ],
+      "name": "bluesky"
+    },
+    {
+      "legitDomains": [
+        "vk.com",
+        "www.vk.com"
+      ],
+      "name": "vk"
+    },
+    {
+      "legitDomains": [
+        "weibo.com",
+        "www.weibo.com"
+      ],
+      "name": "weibo"
+    },
+    {
+      "legitDomains": [
+        "line.me",
+        "www.line.me"
+      ],
+      "name": "line"
+    },
+    {
+      "legitDomains": [
+        "wechat.com",
+        "www.wechat.com"
+      ],
+      "name": "wechat"
+    },
+    {
+      "legitDomains": [
+        "kakao.com",
+        "www.kakao.com"
+      ],
+      "name": "kakao"
+    },
+    {
+      "legitDomains": [
+        "signal.org",
+        "www.signal.org"
+      ],
+      "name": "signal"
+    },
+    {
+      "legitDomains": [
+        "primevideo.com",
+        "www.primevideo.com"
+      ],
+      "name": "primevideo"
+    },
+    {
+      "legitDomains": [
+        "disneyplus.com",
+        "www.disneyplus.com"
+      ],
+      "name": "disneyplus"
+    },
+    {
+      "legitDomains": [
+        "hulu.com",
+        "www.hulu.com"
+      ],
+      "name": "hulu"
+    },
+    {
+      "legitDomains": [
+        "max.com",
+        "www.max.com"
+      ],
+      "name": "max"
+    },
+    {
+      "legitDomains": [
+        "paramountplus.com",
+        "www.paramountplus.com"
+      ],
+      "name": "paramountplus"
+    },
+    {
+      "legitDomains": [
+        "peacocktv.com",
+        "www.peacocktv.com"
+      ],
+      "name": "peacock"
+    },
+    {
+      "legitDomains": [
+        "crunchyroll.com",
+        "www.crunchyroll.com"
+      ],
+      "name": "crunchyroll"
+    },
+    {
+      "legitDomains": [
+        "tubitv.com",
+        "www.tubitv.com"
+      ],
+      "name": "tubi"
+    },
+    {
+      "legitDomains": [
+        "pluto.tv",
+        "www.pluto.tv"
+      ],
+      "name": "pluto"
+    },
+    {
+      "legitDomains": [
+        "vimeo.com",
+        "www.vimeo.com"
+      ],
+      "name": "vimeo"
+    },
+    {
+      "legitDomains": [
+        "dailymotion.com",
+        "www.dailymotion.com"
+      ],
+      "name": "dailymotion"
+    },
+    {
+      "legitDomains": [
+        "ted.com",
+        "www.ted.com"
+      ],
+      "name": "ted"
+    },
+    {
+      "legitDomains": [
+        "9gag.com",
+        "www.9gag.com"
+      ],
+      "name": "9gag"
+    },
+    {
+      "legitDomains": [
+        "imgur.com",
+        "www.imgur.com"
+      ],
+      "name": "imgur"
+    },
+    {
+      "legitDomains": [
+        "giphy.com",
+        "www.giphy.com"
+      ],
+      "name": "giphy"
+    },
+    {
+      "legitDomains": [
+        "tenor.com",
+        "www.tenor.com"
+      ],
+      "name": "tenor"
+    },
+    {
+      "legitDomains": [
+        "flickr.com",
+        "www.flickr.com"
+      ],
+      "name": "flickr"
+    },
+    {
+      "legitDomains": [
+        "500px.com",
+        "www.500px.com"
+      ],
+      "name": "500px"
+    },
+    {
+      "legitDomains": [
+        "unsplash.com",
+        "www.unsplash.com"
+      ],
+      "name": "unsplash"
+    },
+    {
+      "legitDomains": [
+        "pexels.com",
+        "www.pexels.com"
+      ],
+      "name": "pexels"
+    },
+    {
+      "legitDomains": [
+        "pixabay.com",
+        "www.pixabay.com"
+      ],
+      "name": "pixabay"
+    },
+    {
+      "legitDomains": [
+        "deviantart.com",
+        "www.deviantart.com"
+      ],
+      "name": "deviantart"
+    },
+    {
+      "legitDomains": [
+        "behance.net",
+        "www.behance.net"
+      ],
+      "name": "behance"
+    },
+    {
+      "legitDomains": [
+        "dribbble.com",
+        "www.dribbble.com"
+      ],
+      "name": "dribbble"
+    },
+    {
+      "legitDomains": [
+        "artstation.com",
+        "www.artstation.com"
+      ],
+      "name": "artstation"
+    },
+    {
+      "legitDomains": [
+        "instructables.com",
+        "www.instructables.com"
+      ],
+      "name": "instructables"
+    },
+    {
+      "legitDomains": [
+        "kickstarter.com",
+        "www.kickstarter.com"
+      ],
+      "name": "kickstarter"
+    },
+    {
+      "legitDomains": [
+        "indiegogo.com",
+        "www.indiegogo.com"
+      ],
+      "name": "indiegogo"
+    },
+    {
+      "legitDomains": [
+        "patreon.com",
+        "www.patreon.com"
+      ],
+      "name": "patreon"
+    },
+    {
+      "legitDomains": [
+        "substack.com",
+        "www.substack.com"
+      ],
+      "name": "substack"
+    },
+    {
+      "legitDomains": [
+        "blogger.com",
+        "www.blogger.com"
+      ],
+      "name": "blogger"
     }
   ]
 }
