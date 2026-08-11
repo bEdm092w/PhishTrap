@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Guardian PhishGuard: Scam Blocker",
+  "name": "Guardian SafeStep: Scam Blocker",
   "version": "1.0.0",
   "description": "Protects users against phishing, lookalike domains, and tech support scams using multi-layered AI & heuristics.",
   "permissions": [
@@ -24,7 +24,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Guardian PhishGuard Settings"
+    "default_title": "Guardian SafeStep Settings"
   },
     "web_accessible_resources": [
     {
